@@ -1,0 +1,108 @@
+\hypertarget{classgyp_1_1xcodeproj__file_1_1_x_c_hierarchical_element}{}\doxysection{gyp.\+xcodeproj\+\_\+file.\+XCHierarchical\+Element Class Reference}
+\label{classgyp_1_1xcodeproj__file_1_1_x_c_hierarchical_element}\index{gyp.xcodeproj\_file.XCHierarchicalElement@{gyp.xcodeproj\_file.XCHierarchicalElement}}
+Inheritance diagram for gyp.\+xcodeproj\+\_\+file.\+XCHierarchical\+Element\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.145594cm]{classgyp_1_1xcodeproj__file_1_1_x_c_hierarchical_element}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classgyp_1_1xcodeproj__file_1_1_x_c_hierarchical_element_aee0d5bad0d7c4d61c60d598fe4468a3e}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, properties=None, id=None, parent=None)
+\item 
+def \mbox{\hyperlink{classgyp_1_1xcodeproj__file_1_1_x_c_hierarchical_element_a17fdd50beb87cf4251c7ec9bf391568f}{Name}} (self)
+\item 
+def \mbox{\hyperlink{classgyp_1_1xcodeproj__file_1_1_x_c_hierarchical_element_a264614b5bfa89169960dd01d9ca659e1}{Hashables}} (self)
+\item 
+\mbox{\Hypertarget{classgyp_1_1xcodeproj__file_1_1_x_c_hierarchical_element_ac9228dce9a750d0f74ce5eda758d6e0b}\label{classgyp_1_1xcodeproj__file_1_1_x_c_hierarchical_element_ac9228dce9a750d0f74ce5eda758d6e0b}} 
+def {\bfseries Compare} (self, other)
+\item 
+\mbox{\Hypertarget{classgyp_1_1xcodeproj__file_1_1_x_c_hierarchical_element_a3e5cd547d6e6e4e440e958fe9282fa1d}\label{classgyp_1_1xcodeproj__file_1_1_x_c_hierarchical_element_a3e5cd547d6e6e4e440e958fe9282fa1d}} 
+def {\bfseries Compare\+Root\+Group} (self, other)
+\item 
+\mbox{\Hypertarget{classgyp_1_1xcodeproj__file_1_1_x_c_hierarchical_element_a81c97cdb4647413e263550b5c3863eab}\label{classgyp_1_1xcodeproj__file_1_1_x_c_hierarchical_element_a81c97cdb4647413e263550b5c3863eab}} 
+def {\bfseries Path\+From\+Source\+Tree\+And\+Path} (self)
+\item 
+\mbox{\Hypertarget{classgyp_1_1xcodeproj__file_1_1_x_c_hierarchical_element_a363ff71f8eab6df45dd7a065c0dde806}\label{classgyp_1_1xcodeproj__file_1_1_x_c_hierarchical_element_a363ff71f8eab6df45dd7a065c0dde806}} 
+def {\bfseries Full\+Path} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Abstract base for PBXGroup and PBXFileReference.  Not represented in a
+project file.\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgyp_1_1xcodeproj__file_1_1_x_c_hierarchical_element_aee0d5bad0d7c4d61c60d598fe4468a3e}\label{classgyp_1_1xcodeproj__file_1_1_x_c_hierarchical_element_aee0d5bad0d7c4d61c60d598fe4468a3e}} 
+\index{gyp.xcodeproj\_file.XCHierarchicalElement@{gyp.xcodeproj\_file.XCHierarchicalElement}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!gyp.xcodeproj\_file.XCHierarchicalElement@{gyp.xcodeproj\_file.XCHierarchicalElement}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def gyp.\+xcodeproj\+\_\+file.\+XCHierarchical\+Element.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{properties = {\ttfamily None},  }\item[{}]{id = {\ttfamily None},  }\item[{}]{parent = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classgyp_1_1xcodeproj__file_1_1_x_c_object}{gyp.\+xcodeproj\+\_\+file.\+XCObject}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classgyp_1_1xcodeproj__file_1_1_x_c_hierarchical_element_a264614b5bfa89169960dd01d9ca659e1}\label{classgyp_1_1xcodeproj__file_1_1_x_c_hierarchical_element_a264614b5bfa89169960dd01d9ca659e1}} 
+\index{gyp.xcodeproj\_file.XCHierarchicalElement@{gyp.xcodeproj\_file.XCHierarchicalElement}!Hashables@{Hashables}}
+\index{Hashables@{Hashables}!gyp.xcodeproj\_file.XCHierarchicalElement@{gyp.xcodeproj\_file.XCHierarchicalElement}}
+\doxysubsubsection{\texorpdfstring{Hashables()}{Hashables()}}
+{\footnotesize\ttfamily def gyp.\+xcodeproj\+\_\+file.\+XCHierarchical\+Element.\+Hashables (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Custom hashables for XCHierarchicalElements.
+
+XCHierarchicalElements are special.  Generally, their hashes shouldn't
+change if the paths don't change.  The normal XCObject implementation of
+Hashables adds a hashable for each object, which means that if
+the hierarchical structure changes (possibly due to changes caused when
+TakeOverOnlyChild runs and encounters slight changes in the hierarchy),
+the hashes will change.  For example, if a project file initially contains
+a/b/f1 and a/b becomes collapsed into a/b, f1 will have a single parent
+a/b.  If someone later adds a/f2 to the project file, a/b can no longer be
+collapsed, and f1 winds up with parent b and grandparent a.  That would
+be sufficient to change f1's hash.
+
+To counteract this problem, hashables for all XCHierarchicalElements except
+for the main group (which has neither a name nor a path) are taken to be
+just the set of path components.  Because hashables are inherited from
+parents, this provides assurance that a/b/f1 has the same set of hashables
+whether its parent is b or a/b.
+
+The main group is a special case.  As it is permitted to have no name or
+path, it is permitted to use the standard XCObject hash mechanism.  This
+is not considered a problem because there can be only one main group.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classgyp_1_1xcodeproj__file_1_1_x_c_object}{gyp.\+xcodeproj\+\_\+file.\+XCObject}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classgyp_1_1xcodeproj__file_1_1_p_b_x_group_ad2193cf79e093dc363a0fbd30474de75}{gyp.\+xcodeproj\+\_\+file.\+PBXGroup}}.
+
+\mbox{\Hypertarget{classgyp_1_1xcodeproj__file_1_1_x_c_hierarchical_element_a17fdd50beb87cf4251c7ec9bf391568f}\label{classgyp_1_1xcodeproj__file_1_1_x_c_hierarchical_element_a17fdd50beb87cf4251c7ec9bf391568f}} 
+\index{gyp.xcodeproj\_file.XCHierarchicalElement@{gyp.xcodeproj\_file.XCHierarchicalElement}!Name@{Name}}
+\index{Name@{Name}!gyp.xcodeproj\_file.XCHierarchicalElement@{gyp.xcodeproj\_file.XCHierarchicalElement}}
+\doxysubsubsection{\texorpdfstring{Name()}{Name()}}
+{\footnotesize\ttfamily def gyp.\+xcodeproj\+\_\+file.\+XCHierarchical\+Element.\+Name (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the name corresponding to an object.
+
+Not all objects necessarily need to be nameable, and not all that do have
+a "name" property.  Override as needed.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classgyp_1_1xcodeproj__file_1_1_x_c_object_a0d8dfbb29d51e847641abdd533b6e8b1}{gyp.\+xcodeproj\+\_\+file.\+XCObject}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/vaishnavi\+\_\+jadhav/\+Desktop/\+Developer/code/mean-\/stack-\/example/client/node\+\_\+modules/node-\/gyp/gyp/pylib/gyp/xcodeproj\+\_\+file.\+py\end{DoxyCompactItemize}

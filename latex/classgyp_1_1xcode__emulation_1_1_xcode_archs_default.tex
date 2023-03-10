@@ -1,0 +1,41 @@
+\hypertarget{classgyp_1_1xcode__emulation_1_1_xcode_archs_default}{}\doxysection{gyp.\+xcode\+\_\+emulation.\+Xcode\+Archs\+Default Class Reference}
+\label{classgyp_1_1xcode__emulation_1_1_xcode_archs_default}\index{gyp.xcode\_emulation.XcodeArchsDefault@{gyp.xcode\_emulation.XcodeArchsDefault}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgyp_1_1xcode__emulation_1_1_xcode_archs_default_ad718c17f36fe7d3276b5cf6ec9cd5bc0}\label{classgyp_1_1xcode__emulation_1_1_xcode_archs_default_ad718c17f36fe7d3276b5cf6ec9cd5bc0}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, default, mac, iphonesimulator, iphoneos)
+\item 
+def \mbox{\hyperlink{classgyp_1_1xcode__emulation_1_1_xcode_archs_default_a4e44a62c0603c92903d37b9801cf4bea}{Active\+Archs}} (self, archs, valid\+\_\+archs, sdkroot)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgyp_1_1xcode__emulation_1_1_xcode_archs_default_a4f934203c84a10ac2f3d41c291f13b23}\label{classgyp_1_1xcode__emulation_1_1_xcode_archs_default_a4f934203c84a10ac2f3d41c291f13b23}} 
+{\bfseries variable\+\_\+pattern} = re.\+compile(r\char`\"{}\textbackslash{}\$\textbackslash{}(\mbox{[}a-\/zA-\/Z\+\_\+\mbox{]}\mbox{[}a-\/zA-\/Z0-\/9\+\_\+\mbox{]}$\ast$\textbackslash{})\$\char`\"{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A class to resolve ARCHS variable from xcode_settings, resolving Xcode
+macros and implementing filtering by VALID_ARCHS. The expansion of macros
+depends on the SDKROOT used ("macosx", "iphoneos", "iphonesimulator") and
+on the version of Xcode.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classgyp_1_1xcode__emulation_1_1_xcode_archs_default_a4e44a62c0603c92903d37b9801cf4bea}\label{classgyp_1_1xcode__emulation_1_1_xcode_archs_default_a4e44a62c0603c92903d37b9801cf4bea}} 
+\index{gyp.xcode\_emulation.XcodeArchsDefault@{gyp.xcode\_emulation.XcodeArchsDefault}!ActiveArchs@{ActiveArchs}}
+\index{ActiveArchs@{ActiveArchs}!gyp.xcode\_emulation.XcodeArchsDefault@{gyp.xcode\_emulation.XcodeArchsDefault}}
+\doxysubsubsection{\texorpdfstring{ActiveArchs()}{ActiveArchs()}}
+{\footnotesize\ttfamily def gyp.\+xcode\+\_\+emulation.\+Xcode\+Archs\+Default.\+Active\+Archs (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{archs,  }\item[{}]{valid\+\_\+archs,  }\item[{}]{sdkroot }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Expands variables references in ARCHS, and filter by VALID_ARCHS if it
+is defined (if not set, Xcode accept any value in ARCHS, otherwise, only
+values present in VALID_ARCHS are kept).\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/vaishnavi\+\_\+jadhav/\+Desktop/\+Developer/code/mean-\/stack-\/example/client/node\+\_\+modules/node-\/gyp/gyp/pylib/gyp/xcode\+\_\+emulation.\+py\end{DoxyCompactItemize}

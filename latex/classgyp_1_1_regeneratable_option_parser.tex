@@ -1,0 +1,44 @@
+\hypertarget{classgyp_1_1_regeneratable_option_parser}{}\doxysection{gyp.\+Regeneratable\+Option\+Parser Class Reference}
+\label{classgyp_1_1_regeneratable_option_parser}\index{gyp.RegeneratableOptionParser@{gyp.RegeneratableOptionParser}}
+Inheritance diagram for gyp.\+Regeneratable\+Option\+Parser\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classgyp_1_1_regeneratable_option_parser}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgyp_1_1_regeneratable_option_parser_ae32ce764b67fe006906f50f5475fcc8e}\label{classgyp_1_1_regeneratable_option_parser_ae32ce764b67fe006906f50f5475fcc8e}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, usage)
+\item 
+def \mbox{\hyperlink{classgyp_1_1_regeneratable_option_parser_a90d9d8efb39fb0369849b0c34ee8af0b}{add\+\_\+argument}} (self, $\ast$args, $\ast$$\ast$kw)
+\item 
+\mbox{\Hypertarget{classgyp_1_1_regeneratable_option_parser_a0380a83646d9abc73fbd7d35f1985ff1}\label{classgyp_1_1_regeneratable_option_parser_a0380a83646d9abc73fbd7d35f1985ff1}} 
+def {\bfseries parse\+\_\+args} (self, $\ast$args)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classgyp_1_1_regeneratable_option_parser_a90d9d8efb39fb0369849b0c34ee8af0b}\label{classgyp_1_1_regeneratable_option_parser_a90d9d8efb39fb0369849b0c34ee8af0b}} 
+\index{gyp.RegeneratableOptionParser@{gyp.RegeneratableOptionParser}!add\_argument@{add\_argument}}
+\index{add\_argument@{add\_argument}!gyp.RegeneratableOptionParser@{gyp.RegeneratableOptionParser}}
+\doxysubsubsection{\texorpdfstring{add\_argument()}{add\_argument()}}
+{\footnotesize\ttfamily def gyp.\+Regeneratable\+Option\+Parser.\+add\+\_\+argument (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{$\ast$}]{args,  }\item[{$\ast$$\ast$}]{kw }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Add an option to the parser.
+
+This accepts the same arguments as ArgumentParser.add_argument, plus the
+following:
+regenerate: can be set to False to prevent this option from being included
+          in regeneration.
+env_name: name of environment variable that additional values for this
+        option come from.
+type: adds type='path', to tell the regenerator that the values of
+    this option need to be made relative to options.depth
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/vaishnavi\+\_\+jadhav/\+Desktop/\+Developer/code/mean-\/stack-\/example/client/node\+\_\+modules/node-\/gyp/gyp/pylib/gyp/\+\_\+\+\_\+init\+\_\+\+\_\+.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,47 @@
+This is a simple CRUD application built using the MEAN (Mongo\+DB, Express, Angular, Node.\+js) stack. You can also follow the step-\/by-\/step \href{https://www.mongodb.com/languages/mean-stack-tutorial}{\texttt{ tutorial}} for building this application.
+
+\hypertarget{md__c___users_vaishnavi_jadhav__desktop__developer_code_mean_stack_example__r_e_a_d_m_e_autotoc_md16363}{}\doxysection{How To Run}\label{md__c___users_vaishnavi_jadhav__desktop__developer_code_mean_stack_example__r_e_a_d_m_e_autotoc_md16363}
+Set your \href{https://docs.atlas.mongodb.com/getting-started/}{\texttt{ Atlas URI connection string}} as a parameter in {\ttfamily server/.env}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ATLAS\_URI=mongodb://10.44.24.129:27017/mean-\/stack-\/example}
+
+\end{DoxyCode}
+
+
+Note\+: Before starting the application, make sure mongo service is running locally on port 27017. If not check in windows services or start it explicitly with command prompt. Refer \href{https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-windows/}{\texttt{ this}} for more information.
+
+Start the server application\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{cd server}
+
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{npm install}
+
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{npm start}
+
+\end{DoxyCode}
+
+
+Start the client application\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{cd client}
+
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{npm install}
+
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{npm start}
+
+\end{DoxyCode}
+ When both applications are built and running, open your browser on \href{http://localhost:4200/}{\texttt{ http\+://localhost\+:4200/}}. 

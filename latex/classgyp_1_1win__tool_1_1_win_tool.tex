@@ -1,0 +1,139 @@
+\hypertarget{classgyp_1_1win__tool_1_1_win_tool}{}\doxysection{gyp.\+win\+\_\+tool.\+Win\+Tool Class Reference}
+\label{classgyp_1_1win__tool_1_1_win_tool}\index{gyp.win\_tool.WinTool@{gyp.win\_tool.WinTool}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classgyp_1_1win__tool_1_1_win_tool_ae687e21ba8bb4dc856d2a44445238298}{Dispatch}} (self, args)
+\item 
+def \mbox{\hyperlink{classgyp_1_1win__tool_1_1_win_tool_a13b27ef23d5e3bcc5b3c7e729a62810c}{Exec\+Stamp}} (self, path)
+\item 
+def \mbox{\hyperlink{classgyp_1_1win__tool_1_1_win_tool_a0570f6656db1a3be826a5fcb09d03a31}{Exec\+Recursive\+Mirror}} (self, source, dest)
+\item 
+def \mbox{\hyperlink{classgyp_1_1win__tool_1_1_win_tool_a419920eb22d05bc2f621e419a7e09746}{Exec\+Link\+Wrapper}} (self, arch, use\+\_\+separate\+\_\+mspdbsrv, $\ast$args)
+\item 
+def \mbox{\hyperlink{classgyp_1_1win__tool_1_1_win_tool_a656491fda02ca3c166bac46810a59c73}{Exec\+Link\+With\+Manifests}} (self, arch, embed\+\_\+manifest, out, ldcmd, resname, mt, rc, intermediate\+\_\+manifest, $\ast$manifests)
+\item 
+def \mbox{\hyperlink{classgyp_1_1win__tool_1_1_win_tool_a8995d9c655a5c19bbd64ae563282656a}{Exec\+Manifest\+Wrapper}} (self, arch, $\ast$args)
+\item 
+def \mbox{\hyperlink{classgyp_1_1win__tool_1_1_win_tool_a841689fb3942d529f27ea6c595038409}{Exec\+Manifest\+To\+Rc}} (self, arch, $\ast$args)
+\item 
+def \mbox{\hyperlink{classgyp_1_1win__tool_1_1_win_tool_a7eba7fe8db4f5ec40a6de1325c093819}{Exec\+Midl\+Wrapper}} (self, arch, outdir, tlb, h, dlldata, iid, proxy, idl, $\ast$flags)
+\item 
+def \mbox{\hyperlink{classgyp_1_1win__tool_1_1_win_tool_aca3ec8d5650eab44c1dd6a4e3d3fa559}{Exec\+Asm\+Wrapper}} (self, arch, $\ast$args)
+\item 
+def \mbox{\hyperlink{classgyp_1_1win__tool_1_1_win_tool_a969e6aeef2d0aeae904d326fe2f8c8c6}{Exec\+Rc\+Wrapper}} (self, arch, $\ast$args)
+\item 
+def \mbox{\hyperlink{classgyp_1_1win__tool_1_1_win_tool_aff75a227660db0650b234cbe15c17ef4}{Exec\+Action\+Wrapper}} (self, arch, rspfile, $\ast$dir)
+\item 
+def \mbox{\hyperlink{classgyp_1_1win__tool_1_1_win_tool_a5c0939d70a2f96e1c1605ed180a2051e}{Exec\+Cl\+Compile}} (self, project\+\_\+dir, selected\+\_\+files)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}This class performs all the Windows tooling steps. The methods can either
+be executed directly, or dispatched from an argument list.\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classgyp_1_1win__tool_1_1_win_tool_ae687e21ba8bb4dc856d2a44445238298}\label{classgyp_1_1win__tool_1_1_win_tool_ae687e21ba8bb4dc856d2a44445238298}} 
+\index{gyp.win\_tool.WinTool@{gyp.win\_tool.WinTool}!Dispatch@{Dispatch}}
+\index{Dispatch@{Dispatch}!gyp.win\_tool.WinTool@{gyp.win\_tool.WinTool}}
+\doxysubsubsection{\texorpdfstring{Dispatch()}{Dispatch()}}
+{\footnotesize\ttfamily def gyp.\+win\+\_\+tool.\+Win\+Tool.\+Dispatch (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{args }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Dispatches a string command to a method.\end{DoxyVerb}
+ \mbox{\Hypertarget{classgyp_1_1win__tool_1_1_win_tool_aff75a227660db0650b234cbe15c17ef4}\label{classgyp_1_1win__tool_1_1_win_tool_aff75a227660db0650b234cbe15c17ef4}} 
+\index{gyp.win\_tool.WinTool@{gyp.win\_tool.WinTool}!ExecActionWrapper@{ExecActionWrapper}}
+\index{ExecActionWrapper@{ExecActionWrapper}!gyp.win\_tool.WinTool@{gyp.win\_tool.WinTool}}
+\doxysubsubsection{\texorpdfstring{ExecActionWrapper()}{ExecActionWrapper()}}
+{\footnotesize\ttfamily def gyp.\+win\+\_\+tool.\+Win\+Tool.\+Exec\+Action\+Wrapper (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{arch,  }\item[{}]{rspfile,  }\item[{$\ast$}]{dir }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Runs an action command line from a response file using the environment
+for |arch|. If |dir| is supplied, use that as the working directory.\end{DoxyVerb}
+ \mbox{\Hypertarget{classgyp_1_1win__tool_1_1_win_tool_aca3ec8d5650eab44c1dd6a4e3d3fa559}\label{classgyp_1_1win__tool_1_1_win_tool_aca3ec8d5650eab44c1dd6a4e3d3fa559}} 
+\index{gyp.win\_tool.WinTool@{gyp.win\_tool.WinTool}!ExecAsmWrapper@{ExecAsmWrapper}}
+\index{ExecAsmWrapper@{ExecAsmWrapper}!gyp.win\_tool.WinTool@{gyp.win\_tool.WinTool}}
+\doxysubsubsection{\texorpdfstring{ExecAsmWrapper()}{ExecAsmWrapper()}}
+{\footnotesize\ttfamily def gyp.\+win\+\_\+tool.\+Win\+Tool.\+Exec\+Asm\+Wrapper (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{arch,  }\item[{$\ast$}]{args }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Filter logo banner from invocations of asm.exe.\end{DoxyVerb}
+ \mbox{\Hypertarget{classgyp_1_1win__tool_1_1_win_tool_a5c0939d70a2f96e1c1605ed180a2051e}\label{classgyp_1_1win__tool_1_1_win_tool_a5c0939d70a2f96e1c1605ed180a2051e}} 
+\index{gyp.win\_tool.WinTool@{gyp.win\_tool.WinTool}!ExecClCompile@{ExecClCompile}}
+\index{ExecClCompile@{ExecClCompile}!gyp.win\_tool.WinTool@{gyp.win\_tool.WinTool}}
+\doxysubsubsection{\texorpdfstring{ExecClCompile()}{ExecClCompile()}}
+{\footnotesize\ttfamily def gyp.\+win\+\_\+tool.\+Win\+Tool.\+Exec\+Cl\+Compile (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{project\+\_\+dir,  }\item[{}]{selected\+\_\+files }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Executed by msvs-ninja projects when the 'ClCompile' target is used to
+build selected C/C++ files.\end{DoxyVerb}
+ \mbox{\Hypertarget{classgyp_1_1win__tool_1_1_win_tool_a656491fda02ca3c166bac46810a59c73}\label{classgyp_1_1win__tool_1_1_win_tool_a656491fda02ca3c166bac46810a59c73}} 
+\index{gyp.win\_tool.WinTool@{gyp.win\_tool.WinTool}!ExecLinkWithManifests@{ExecLinkWithManifests}}
+\index{ExecLinkWithManifests@{ExecLinkWithManifests}!gyp.win\_tool.WinTool@{gyp.win\_tool.WinTool}}
+\doxysubsubsection{\texorpdfstring{ExecLinkWithManifests()}{ExecLinkWithManifests()}}
+{\footnotesize\ttfamily def gyp.\+win\+\_\+tool.\+Win\+Tool.\+Exec\+Link\+With\+Manifests (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{arch,  }\item[{}]{embed\+\_\+manifest,  }\item[{}]{out,  }\item[{}]{ldcmd,  }\item[{}]{resname,  }\item[{}]{mt,  }\item[{}]{rc,  }\item[{}]{intermediate\+\_\+manifest,  }\item[{$\ast$}]{manifests }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A wrapper for handling creating a manifest resource and then executing
+a link command.\end{DoxyVerb}
+ \mbox{\Hypertarget{classgyp_1_1win__tool_1_1_win_tool_a419920eb22d05bc2f621e419a7e09746}\label{classgyp_1_1win__tool_1_1_win_tool_a419920eb22d05bc2f621e419a7e09746}} 
+\index{gyp.win\_tool.WinTool@{gyp.win\_tool.WinTool}!ExecLinkWrapper@{ExecLinkWrapper}}
+\index{ExecLinkWrapper@{ExecLinkWrapper}!gyp.win\_tool.WinTool@{gyp.win\_tool.WinTool}}
+\doxysubsubsection{\texorpdfstring{ExecLinkWrapper()}{ExecLinkWrapper()}}
+{\footnotesize\ttfamily def gyp.\+win\+\_\+tool.\+Win\+Tool.\+Exec\+Link\+Wrapper (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{arch,  }\item[{}]{use\+\_\+separate\+\_\+mspdbsrv,  }\item[{$\ast$}]{args }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Filter diagnostic output from link that looks like:
+'   Creating library ui.dll.lib and object ui.dll.exp'
+This happens when there are exports from the dll or exe.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgyp_1_1win__tool_1_1_win_tool_a841689fb3942d529f27ea6c595038409}\label{classgyp_1_1win__tool_1_1_win_tool_a841689fb3942d529f27ea6c595038409}} 
+\index{gyp.win\_tool.WinTool@{gyp.win\_tool.WinTool}!ExecManifestToRc@{ExecManifestToRc}}
+\index{ExecManifestToRc@{ExecManifestToRc}!gyp.win\_tool.WinTool@{gyp.win\_tool.WinTool}}
+\doxysubsubsection{\texorpdfstring{ExecManifestToRc()}{ExecManifestToRc()}}
+{\footnotesize\ttfamily def gyp.\+win\+\_\+tool.\+Win\+Tool.\+Exec\+Manifest\+To\+Rc (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{arch,  }\item[{$\ast$}]{args }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Creates a resource file pointing a SxS assembly manifest.
+|args| is tuple containing path to resource file, path to manifest file
+and resource name which can be "1" (for executables) or "2" (for DLLs).\end{DoxyVerb}
+ \mbox{\Hypertarget{classgyp_1_1win__tool_1_1_win_tool_a8995d9c655a5c19bbd64ae563282656a}\label{classgyp_1_1win__tool_1_1_win_tool_a8995d9c655a5c19bbd64ae563282656a}} 
+\index{gyp.win\_tool.WinTool@{gyp.win\_tool.WinTool}!ExecManifestWrapper@{ExecManifestWrapper}}
+\index{ExecManifestWrapper@{ExecManifestWrapper}!gyp.win\_tool.WinTool@{gyp.win\_tool.WinTool}}
+\doxysubsubsection{\texorpdfstring{ExecManifestWrapper()}{ExecManifestWrapper()}}
+{\footnotesize\ttfamily def gyp.\+win\+\_\+tool.\+Win\+Tool.\+Exec\+Manifest\+Wrapper (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{arch,  }\item[{$\ast$}]{args }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Run manifest tool with environment set. Strip out undesirable warning
+(some XML blocks are recognized by the OS loader, but not the manifest
+tool).\end{DoxyVerb}
+ \mbox{\Hypertarget{classgyp_1_1win__tool_1_1_win_tool_a7eba7fe8db4f5ec40a6de1325c093819}\label{classgyp_1_1win__tool_1_1_win_tool_a7eba7fe8db4f5ec40a6de1325c093819}} 
+\index{gyp.win\_tool.WinTool@{gyp.win\_tool.WinTool}!ExecMidlWrapper@{ExecMidlWrapper}}
+\index{ExecMidlWrapper@{ExecMidlWrapper}!gyp.win\_tool.WinTool@{gyp.win\_tool.WinTool}}
+\doxysubsubsection{\texorpdfstring{ExecMidlWrapper()}{ExecMidlWrapper()}}
+{\footnotesize\ttfamily def gyp.\+win\+\_\+tool.\+Win\+Tool.\+Exec\+Midl\+Wrapper (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{arch,  }\item[{}]{outdir,  }\item[{}]{tlb,  }\item[{}]{h,  }\item[{}]{dlldata,  }\item[{}]{iid,  }\item[{}]{proxy,  }\item[{}]{idl,  }\item[{$\ast$}]{flags }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Filter noisy filenames output from MIDL compile step that isn't
+quietable via command line flags.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgyp_1_1win__tool_1_1_win_tool_a969e6aeef2d0aeae904d326fe2f8c8c6}\label{classgyp_1_1win__tool_1_1_win_tool_a969e6aeef2d0aeae904d326fe2f8c8c6}} 
+\index{gyp.win\_tool.WinTool@{gyp.win\_tool.WinTool}!ExecRcWrapper@{ExecRcWrapper}}
+\index{ExecRcWrapper@{ExecRcWrapper}!gyp.win\_tool.WinTool@{gyp.win\_tool.WinTool}}
+\doxysubsubsection{\texorpdfstring{ExecRcWrapper()}{ExecRcWrapper()}}
+{\footnotesize\ttfamily def gyp.\+win\+\_\+tool.\+Win\+Tool.\+Exec\+Rc\+Wrapper (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{arch,  }\item[{$\ast$}]{args }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Filter logo banner from invocations of rc.exe. Older versions of RC
+don't support the /nologo flag.\end{DoxyVerb}
+ \mbox{\Hypertarget{classgyp_1_1win__tool_1_1_win_tool_a0570f6656db1a3be826a5fcb09d03a31}\label{classgyp_1_1win__tool_1_1_win_tool_a0570f6656db1a3be826a5fcb09d03a31}} 
+\index{gyp.win\_tool.WinTool@{gyp.win\_tool.WinTool}!ExecRecursiveMirror@{ExecRecursiveMirror}}
+\index{ExecRecursiveMirror@{ExecRecursiveMirror}!gyp.win\_tool.WinTool@{gyp.win\_tool.WinTool}}
+\doxysubsubsection{\texorpdfstring{ExecRecursiveMirror()}{ExecRecursiveMirror()}}
+{\footnotesize\ttfamily def gyp.\+win\+\_\+tool.\+Win\+Tool.\+Exec\+Recursive\+Mirror (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{source,  }\item[{}]{dest }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Emulation of rm -rf out && cp -af in out.\end{DoxyVerb}
+ \mbox{\Hypertarget{classgyp_1_1win__tool_1_1_win_tool_a13b27ef23d5e3bcc5b3c7e729a62810c}\label{classgyp_1_1win__tool_1_1_win_tool_a13b27ef23d5e3bcc5b3c7e729a62810c}} 
+\index{gyp.win\_tool.WinTool@{gyp.win\_tool.WinTool}!ExecStamp@{ExecStamp}}
+\index{ExecStamp@{ExecStamp}!gyp.win\_tool.WinTool@{gyp.win\_tool.WinTool}}
+\doxysubsubsection{\texorpdfstring{ExecStamp()}{ExecStamp()}}
+{\footnotesize\ttfamily def gyp.\+win\+\_\+tool.\+Win\+Tool.\+Exec\+Stamp (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{path }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Simple stamp command.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/vaishnavi\+\_\+jadhav/\+Desktop/\+Developer/code/mean-\/stack-\/example/client/node\+\_\+modules/node-\/gyp/gyp/pylib/gyp/win\+\_\+tool.\+py\end{DoxyCompactItemize}

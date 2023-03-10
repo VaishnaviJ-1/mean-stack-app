@@ -1,0 +1,145 @@
+\hypertarget{classgyp_1_1_m_s_v_s_settings__test_1_1_test_sequence_functions}{}\doxysection{gyp.\+MSVSSettings\+\_\+test.\+Test\+Sequence\+Functions Class Reference}
+\label{classgyp_1_1_m_s_v_s_settings__test_1_1_test_sequence_functions}\index{gyp.MSVSSettings\_test.TestSequenceFunctions@{gyp.MSVSSettings\_test.TestSequenceFunctions}}
+Inheritance diagram for gyp.\+MSVSSettings\+\_\+test.\+Test\+Sequence\+Functions\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classgyp_1_1_m_s_v_s_settings__test_1_1_test_sequence_functions}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgyp_1_1_m_s_v_s_settings__test_1_1_test_sequence_functions_a145b504f1bba644bef3c80225615470d}\label{classgyp_1_1_m_s_v_s_settings__test_1_1_test_sequence_functions_a145b504f1bba644bef3c80225615470d}} 
+def {\bfseries set\+Up} (self)
+\item 
+def \mbox{\hyperlink{classgyp_1_1_m_s_v_s_settings__test_1_1_test_sequence_functions_a50162c81e734fceeeef59fec285755fe}{test\+Validate\+MSVSSettings\+\_\+tool\+\_\+names}} (self)
+\item 
+def \mbox{\hyperlink{classgyp_1_1_m_s_v_s_settings__test_1_1_test_sequence_functions_a3878217bb8036f2c263ec0c82f6d6e81}{test\+Validate\+MSVSSettings\+\_\+settings}} (self)
+\item 
+def \mbox{\hyperlink{classgyp_1_1_m_s_v_s_settings__test_1_1_test_sequence_functions_a25f2acb7e6126fae7c33c7fcfdc4d45a}{test\+Validate\+MSBuild\+Settings\+\_\+settings}} (self)
+\item 
+def \mbox{\hyperlink{classgyp_1_1_m_s_v_s_settings__test_1_1_test_sequence_functions_adffa6530fb59c0d3395360f059da9e1c}{test\+Convert\+To\+MSBuild\+Settings\+\_\+empty}} (self)
+\item 
+def \mbox{\hyperlink{classgyp_1_1_m_s_v_s_settings__test_1_1_test_sequence_functions_ac6048d52f9aa9e6f876969d247f81bc5}{test\+Convert\+To\+MSBuild\+Settings\+\_\+minimal}} (self)
+\item 
+def \mbox{\hyperlink{classgyp_1_1_m_s_v_s_settings__test_1_1_test_sequence_functions_aa72fa2fed221e2ad47b0cbbf5a1f6647}{test\+Convert\+To\+MSBuild\+Settings\+\_\+warnings}} (self)
+\item 
+def \mbox{\hyperlink{classgyp_1_1_m_s_v_s_settings__test_1_1_test_sequence_functions_af1dd9c1a3f0e2506facfaf4df7af068d}{test\+Convert\+To\+MSBuild\+Settings\+\_\+full\+\_\+synthetic}} (self)
+\item 
+def \mbox{\hyperlink{classgyp_1_1_m_s_v_s_settings__test_1_1_test_sequence_functions_a864f87bda842e7ea4f229f89a512d812}{test\+Convert\+To\+MSBuild\+Settings\+\_\+actual}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgyp_1_1_m_s_v_s_settings__test_1_1_test_sequence_functions_ac215015d28ab8cd1fc47dcc52e4603fd}\label{classgyp_1_1_m_s_v_s_settings__test_1_1_test_sequence_functions_ac215015d28ab8cd1fc47dcc52e4603fd}} 
+{\bfseries stderr}
+\item 
+\mbox{\Hypertarget{classgyp_1_1_m_s_v_s_settings__test_1_1_test_sequence_functions_a1136b86b7d3be56d3bf133ce6af89bb0}\label{classgyp_1_1_m_s_v_s_settings__test_1_1_test_sequence_functions_a1136b86b7d3be56d3bf133ce6af89bb0}} 
+{\bfseries max\+Diff}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classgyp_1_1_m_s_v_s_settings__test_1_1_test_sequence_functions_a864f87bda842e7ea4f229f89a512d812}\label{classgyp_1_1_m_s_v_s_settings__test_1_1_test_sequence_functions_a864f87bda842e7ea4f229f89a512d812}} 
+\index{gyp.MSVSSettings\_test.TestSequenceFunctions@{gyp.MSVSSettings\_test.TestSequenceFunctions}!testConvertToMSBuildSettings\_actual@{testConvertToMSBuildSettings\_actual}}
+\index{testConvertToMSBuildSettings\_actual@{testConvertToMSBuildSettings\_actual}!gyp.MSVSSettings\_test.TestSequenceFunctions@{gyp.MSVSSettings\_test.TestSequenceFunctions}}
+\doxysubsubsection{\texorpdfstring{testConvertToMSBuildSettings\_actual()}{testConvertToMSBuildSettings\_actual()}}
+{\footnotesize\ttfamily def gyp.\+MSVSSettings\+\_\+test.\+Test\+Sequence\+Functions.\+test\+Convert\+To\+MSBuild\+Settings\+\_\+actual (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Tests the conversion of an actual project.
+
+A VS2008 project with most of the options defined was created through the
+VS2008 IDE.  It was then converted to VS2010.  The tool settings found in
+the .vcproj and .vcxproj files were converted to the two dictionaries
+msvs_settings and expected_msbuild_settings.
+
+Note that for many settings, the VS2010 converter adds macros like
+%(AdditionalIncludeDirectories) to make sure than inherited values are
+included.  Since the Gyp projects we generate do not use inheritance,
+we removed these macros.  They were:
+ClCompile:
+    AdditionalIncludeDirectories:  ';%(AdditionalIncludeDirectories)'
+    AdditionalOptions:  ' %(AdditionalOptions)'
+    AdditionalUsingDirectories:  ';%(AdditionalUsingDirectories)'
+    DisableSpecificWarnings: ';%(DisableSpecificWarnings)',
+    ForcedIncludeFiles:  ';%(ForcedIncludeFiles)',
+    ForcedUsingFiles:  ';%(ForcedUsingFiles)',
+    PreprocessorDefinitions:  ';%(PreprocessorDefinitions)',
+    UndefinePreprocessorDefinitions:
+        ';%(UndefinePreprocessorDefinitions)',
+Link:
+    AdditionalDependencies:  ';%(AdditionalDependencies)',
+    AdditionalLibraryDirectories:  ';%(AdditionalLibraryDirectories)',
+    AdditionalManifestDependencies:
+        ';%(AdditionalManifestDependencies)',
+    AdditionalOptions:  ' %(AdditionalOptions)',
+    AddModuleNamesToAssembly:  ';%(AddModuleNamesToAssembly)',
+    AssemblyLinkResource:  ';%(AssemblyLinkResource)',
+    DelayLoadDLLs:  ';%(DelayLoadDLLs)',
+    EmbedManagedResourceFile:  ';%(EmbedManagedResourceFile)',
+    ForceSymbolReferences:  ';%(ForceSymbolReferences)',
+    IgnoreSpecificDefaultLibraries:
+        ';%(IgnoreSpecificDefaultLibraries)',
+ResourceCompile:
+    AdditionalIncludeDirectories:  ';%(AdditionalIncludeDirectories)',
+    AdditionalOptions:  ' %(AdditionalOptions)',
+    PreprocessorDefinitions:  ';%(PreprocessorDefinitions)',
+Manifest:
+    AdditionalManifestFiles:  ';%(AdditionalManifestFiles)',
+    AdditionalOptions:  ' %(AdditionalOptions)',
+    InputResourceManifests:  ';%(InputResourceManifests)',
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgyp_1_1_m_s_v_s_settings__test_1_1_test_sequence_functions_adffa6530fb59c0d3395360f059da9e1c}\label{classgyp_1_1_m_s_v_s_settings__test_1_1_test_sequence_functions_adffa6530fb59c0d3395360f059da9e1c}} 
+\index{gyp.MSVSSettings\_test.TestSequenceFunctions@{gyp.MSVSSettings\_test.TestSequenceFunctions}!testConvertToMSBuildSettings\_empty@{testConvertToMSBuildSettings\_empty}}
+\index{testConvertToMSBuildSettings\_empty@{testConvertToMSBuildSettings\_empty}!gyp.MSVSSettings\_test.TestSequenceFunctions@{gyp.MSVSSettings\_test.TestSequenceFunctions}}
+\doxysubsubsection{\texorpdfstring{testConvertToMSBuildSettings\_empty()}{testConvertToMSBuildSettings\_empty()}}
+{\footnotesize\ttfamily def gyp.\+MSVSSettings\+\_\+test.\+Test\+Sequence\+Functions.\+test\+Convert\+To\+MSBuild\+Settings\+\_\+empty (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Tests an empty conversion.\end{DoxyVerb}
+ \mbox{\Hypertarget{classgyp_1_1_m_s_v_s_settings__test_1_1_test_sequence_functions_af1dd9c1a3f0e2506facfaf4df7af068d}\label{classgyp_1_1_m_s_v_s_settings__test_1_1_test_sequence_functions_af1dd9c1a3f0e2506facfaf4df7af068d}} 
+\index{gyp.MSVSSettings\_test.TestSequenceFunctions@{gyp.MSVSSettings\_test.TestSequenceFunctions}!testConvertToMSBuildSettings\_full\_synthetic@{testConvertToMSBuildSettings\_full\_synthetic}}
+\index{testConvertToMSBuildSettings\_full\_synthetic@{testConvertToMSBuildSettings\_full\_synthetic}!gyp.MSVSSettings\_test.TestSequenceFunctions@{gyp.MSVSSettings\_test.TestSequenceFunctions}}
+\doxysubsubsection{\texorpdfstring{testConvertToMSBuildSettings\_full\_synthetic()}{testConvertToMSBuildSettings\_full\_synthetic()}}
+{\footnotesize\ttfamily def gyp.\+MSVSSettings\+\_\+test.\+Test\+Sequence\+Functions.\+test\+Convert\+To\+MSBuild\+Settings\+\_\+full\+\_\+synthetic (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Tests conversion of all the MSBuild settings.\end{DoxyVerb}
+ \mbox{\Hypertarget{classgyp_1_1_m_s_v_s_settings__test_1_1_test_sequence_functions_ac6048d52f9aa9e6f876969d247f81bc5}\label{classgyp_1_1_m_s_v_s_settings__test_1_1_test_sequence_functions_ac6048d52f9aa9e6f876969d247f81bc5}} 
+\index{gyp.MSVSSettings\_test.TestSequenceFunctions@{gyp.MSVSSettings\_test.TestSequenceFunctions}!testConvertToMSBuildSettings\_minimal@{testConvertToMSBuildSettings\_minimal}}
+\index{testConvertToMSBuildSettings\_minimal@{testConvertToMSBuildSettings\_minimal}!gyp.MSVSSettings\_test.TestSequenceFunctions@{gyp.MSVSSettings\_test.TestSequenceFunctions}}
+\doxysubsubsection{\texorpdfstring{testConvertToMSBuildSettings\_minimal()}{testConvertToMSBuildSettings\_minimal()}}
+{\footnotesize\ttfamily def gyp.\+MSVSSettings\+\_\+test.\+Test\+Sequence\+Functions.\+test\+Convert\+To\+MSBuild\+Settings\+\_\+minimal (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Tests a minimal conversion.\end{DoxyVerb}
+ \mbox{\Hypertarget{classgyp_1_1_m_s_v_s_settings__test_1_1_test_sequence_functions_aa72fa2fed221e2ad47b0cbbf5a1f6647}\label{classgyp_1_1_m_s_v_s_settings__test_1_1_test_sequence_functions_aa72fa2fed221e2ad47b0cbbf5a1f6647}} 
+\index{gyp.MSVSSettings\_test.TestSequenceFunctions@{gyp.MSVSSettings\_test.TestSequenceFunctions}!testConvertToMSBuildSettings\_warnings@{testConvertToMSBuildSettings\_warnings}}
+\index{testConvertToMSBuildSettings\_warnings@{testConvertToMSBuildSettings\_warnings}!gyp.MSVSSettings\_test.TestSequenceFunctions@{gyp.MSVSSettings\_test.TestSequenceFunctions}}
+\doxysubsubsection{\texorpdfstring{testConvertToMSBuildSettings\_warnings()}{testConvertToMSBuildSettings\_warnings()}}
+{\footnotesize\ttfamily def gyp.\+MSVSSettings\+\_\+test.\+Test\+Sequence\+Functions.\+test\+Convert\+To\+MSBuild\+Settings\+\_\+warnings (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Tests conversion that generates warnings.\end{DoxyVerb}
+ \mbox{\Hypertarget{classgyp_1_1_m_s_v_s_settings__test_1_1_test_sequence_functions_a25f2acb7e6126fae7c33c7fcfdc4d45a}\label{classgyp_1_1_m_s_v_s_settings__test_1_1_test_sequence_functions_a25f2acb7e6126fae7c33c7fcfdc4d45a}} 
+\index{gyp.MSVSSettings\_test.TestSequenceFunctions@{gyp.MSVSSettings\_test.TestSequenceFunctions}!testValidateMSBuildSettings\_settings@{testValidateMSBuildSettings\_settings}}
+\index{testValidateMSBuildSettings\_settings@{testValidateMSBuildSettings\_settings}!gyp.MSVSSettings\_test.TestSequenceFunctions@{gyp.MSVSSettings\_test.TestSequenceFunctions}}
+\doxysubsubsection{\texorpdfstring{testValidateMSBuildSettings\_settings()}{testValidateMSBuildSettings\_settings()}}
+{\footnotesize\ttfamily def gyp.\+MSVSSettings\+\_\+test.\+Test\+Sequence\+Functions.\+test\+Validate\+MSBuild\+Settings\+\_\+settings (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Tests that for invalid MSBuild settings.\end{DoxyVerb}
+ \mbox{\Hypertarget{classgyp_1_1_m_s_v_s_settings__test_1_1_test_sequence_functions_a3878217bb8036f2c263ec0c82f6d6e81}\label{classgyp_1_1_m_s_v_s_settings__test_1_1_test_sequence_functions_a3878217bb8036f2c263ec0c82f6d6e81}} 
+\index{gyp.MSVSSettings\_test.TestSequenceFunctions@{gyp.MSVSSettings\_test.TestSequenceFunctions}!testValidateMSVSSettings\_settings@{testValidateMSVSSettings\_settings}}
+\index{testValidateMSVSSettings\_settings@{testValidateMSVSSettings\_settings}!gyp.MSVSSettings\_test.TestSequenceFunctions@{gyp.MSVSSettings\_test.TestSequenceFunctions}}
+\doxysubsubsection{\texorpdfstring{testValidateMSVSSettings\_settings()}{testValidateMSVSSettings\_settings()}}
+{\footnotesize\ttfamily def gyp.\+MSVSSettings\+\_\+test.\+Test\+Sequence\+Functions.\+test\+Validate\+MSVSSettings\+\_\+settings (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Tests that for invalid MSVS settings.\end{DoxyVerb}
+ \mbox{\Hypertarget{classgyp_1_1_m_s_v_s_settings__test_1_1_test_sequence_functions_a50162c81e734fceeeef59fec285755fe}\label{classgyp_1_1_m_s_v_s_settings__test_1_1_test_sequence_functions_a50162c81e734fceeeef59fec285755fe}} 
+\index{gyp.MSVSSettings\_test.TestSequenceFunctions@{gyp.MSVSSettings\_test.TestSequenceFunctions}!testValidateMSVSSettings\_tool\_names@{testValidateMSVSSettings\_tool\_names}}
+\index{testValidateMSVSSettings\_tool\_names@{testValidateMSVSSettings\_tool\_names}!gyp.MSVSSettings\_test.TestSequenceFunctions@{gyp.MSVSSettings\_test.TestSequenceFunctions}}
+\doxysubsubsection{\texorpdfstring{testValidateMSVSSettings\_tool\_names()}{testValidateMSVSSettings\_tool\_names()}}
+{\footnotesize\ttfamily def gyp.\+MSVSSettings\+\_\+test.\+Test\+Sequence\+Functions.\+test\+Validate\+MSVSSettings\+\_\+tool\+\_\+names (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Tests that only MSVS tool names are allowed.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/vaishnavi\+\_\+jadhav/\+Desktop/\+Developer/code/mean-\/stack-\/example/client/node\+\_\+modules/node-\/gyp/gyp/pylib/gyp/MSVSSettings\+\_\+test.\+py\end{DoxyCompactItemize}

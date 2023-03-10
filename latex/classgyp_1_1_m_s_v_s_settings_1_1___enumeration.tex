@@ -1,0 +1,99 @@
+\hypertarget{classgyp_1_1_m_s_v_s_settings_1_1___enumeration}{}\doxysection{gyp.\+MSVSSettings.\+\_\+\+Enumeration Class Reference}
+\label{classgyp_1_1_m_s_v_s_settings_1_1___enumeration}\index{gyp.MSVSSettings.\_Enumeration@{gyp.MSVSSettings.\_Enumeration}}
+Inheritance diagram for gyp.\+MSVSSettings.\+\_\+\+Enumeration\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classgyp_1_1_m_s_v_s_settings_1_1___enumeration}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgyp_1_1_m_s_v_s_settings_1_1___enumeration_acbaf928b66e744e00c905087a5cf8f06}\label{classgyp_1_1_m_s_v_s_settings_1_1___enumeration_acbaf928b66e744e00c905087a5cf8f06}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, label\+\_\+list, new=None)
+\item 
+def \mbox{\hyperlink{classgyp_1_1_m_s_v_s_settings_1_1___enumeration_a1115bf5a6c674f78f391b77a29970a0c}{Validate\+MSVS}} (self, value)
+\item 
+def \mbox{\hyperlink{classgyp_1_1_m_s_v_s_settings_1_1___enumeration_a6b4c2cd896103938bae67a9f78c455c5}{Validate\+MSBuild}} (self, value)
+\item 
+def \mbox{\hyperlink{classgyp_1_1_m_s_v_s_settings_1_1___enumeration_abdec731ede63b9f6e20eedf17f9002cd}{Convert\+To\+MSBuild}} (self, value)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Type of settings that is an enumeration.
+
+In MSVS, the values are indexes like '0', '1', and '2'.
+MSBuild uses text labels that are more representative, like 'Win32'.
+
+Constructor args:
+label_list: an array of MSBuild labels that correspond to the MSVS index.
+    In the rare cases where MSVS has skipped an index value, None is
+    used in the array to indicate the unused spot.
+new: an array of labels that are new to MSBuild.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classgyp_1_1_m_s_v_s_settings_1_1___enumeration_abdec731ede63b9f6e20eedf17f9002cd}\label{classgyp_1_1_m_s_v_s_settings_1_1___enumeration_abdec731ede63b9f6e20eedf17f9002cd}} 
+\index{gyp.MSVSSettings.\_Enumeration@{gyp.MSVSSettings.\_Enumeration}!ConvertToMSBuild@{ConvertToMSBuild}}
+\index{ConvertToMSBuild@{ConvertToMSBuild}!gyp.MSVSSettings.\_Enumeration@{gyp.MSVSSettings.\_Enumeration}}
+\doxysubsubsection{\texorpdfstring{ConvertToMSBuild()}{ConvertToMSBuild()}}
+{\footnotesize\ttfamily def gyp.\+MSVSSettings.\+\_\+\+Enumeration.\+Convert\+To\+MSBuild (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{value }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the MSBuild equivalent of the MSVS value given.
+
+Args:
+value: the MSVS value to convert.
+
+Returns:
+the MSBuild equivalent.
+
+Raises:
+ValueError if value is not valid.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classgyp_1_1_m_s_v_s_settings_1_1___type_aca4142b49f31c027934a1f88881ea0c0}{gyp.\+MSVSSettings.\+\_\+\+Type}}.
+
+\mbox{\Hypertarget{classgyp_1_1_m_s_v_s_settings_1_1___enumeration_a6b4c2cd896103938bae67a9f78c455c5}\label{classgyp_1_1_m_s_v_s_settings_1_1___enumeration_a6b4c2cd896103938bae67a9f78c455c5}} 
+\index{gyp.MSVSSettings.\_Enumeration@{gyp.MSVSSettings.\_Enumeration}!ValidateMSBuild@{ValidateMSBuild}}
+\index{ValidateMSBuild@{ValidateMSBuild}!gyp.MSVSSettings.\_Enumeration@{gyp.MSVSSettings.\_Enumeration}}
+\doxysubsubsection{\texorpdfstring{ValidateMSBuild()}{ValidateMSBuild()}}
+{\footnotesize\ttfamily def gyp.\+MSVSSettings.\+\_\+\+Enumeration.\+Validate\+MSBuild (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{value }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Verifies that the value is legal for MSBuild.
+
+Args:
+value: the value to check for this type.
+
+Raises:
+ValueError if value is not valid for MSBuild.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classgyp_1_1_m_s_v_s_settings_1_1___type_a7d635a58fb29482975b29532489843e4}{gyp.\+MSVSSettings.\+\_\+\+Type}}.
+
+\mbox{\Hypertarget{classgyp_1_1_m_s_v_s_settings_1_1___enumeration_a1115bf5a6c674f78f391b77a29970a0c}\label{classgyp_1_1_m_s_v_s_settings_1_1___enumeration_a1115bf5a6c674f78f391b77a29970a0c}} 
+\index{gyp.MSVSSettings.\_Enumeration@{gyp.MSVSSettings.\_Enumeration}!ValidateMSVS@{ValidateMSVS}}
+\index{ValidateMSVS@{ValidateMSVS}!gyp.MSVSSettings.\_Enumeration@{gyp.MSVSSettings.\_Enumeration}}
+\doxysubsubsection{\texorpdfstring{ValidateMSVS()}{ValidateMSVS()}}
+{\footnotesize\ttfamily def gyp.\+MSVSSettings.\+\_\+\+Enumeration.\+Validate\+MSVS (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{value }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Verifies that the value is legal for MSVS.
+
+Args:
+value: the value to check for this type.
+
+Raises:
+ValueError if value is not valid for MSVS.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classgyp_1_1_m_s_v_s_settings_1_1___type_a5586f893560e4f75cb5d8be99738fe63}{gyp.\+MSVSSettings.\+\_\+\+Type}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/vaishnavi\+\_\+jadhav/\+Desktop/\+Developer/code/mean-\/stack-\/example/client/node\+\_\+modules/node-\/gyp/gyp/pylib/gyp/MSVSSettings.\+py\end{DoxyCompactItemize}

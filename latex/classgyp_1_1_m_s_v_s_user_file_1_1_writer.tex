@@ -1,0 +1,88 @@
+\hypertarget{classgyp_1_1_m_s_v_s_user_file_1_1_writer}{}\doxysection{gyp.\+MSVSUser\+File.\+Writer Class Reference}
+\label{classgyp_1_1_m_s_v_s_user_file_1_1_writer}\index{gyp.MSVSUserFile.Writer@{gyp.MSVSUserFile.Writer}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classgyp_1_1_m_s_v_s_user_file_1_1_writer_a311e7148c17c60e6486f17ee24f7aac6}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, user\+\_\+file\+\_\+path, version, name)
+\item 
+def \mbox{\hyperlink{classgyp_1_1_m_s_v_s_user_file_1_1_writer_a204919c3534b512904954942e9e54d4d}{Add\+Config}} (self, name)
+\item 
+def \mbox{\hyperlink{classgyp_1_1_m_s_v_s_user_file_1_1_writer_afc922ceaa4962b010701ba65f7daee71}{Add\+Debug\+Settings}} (self, config\+\_\+name, command, environment=\{\}, working\+\_\+directory=\char`\"{}\char`\"{})
+\item 
+def \mbox{\hyperlink{classgyp_1_1_m_s_v_s_user_file_1_1_writer_a24d2f6548017e8a8ed419605b5424897}{Write\+If\+Changed}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgyp_1_1_m_s_v_s_user_file_1_1_writer_a32bdd408ee2b966dd16808b1e60dbe1f}\label{classgyp_1_1_m_s_v_s_user_file_1_1_writer_a32bdd408ee2b966dd16808b1e60dbe1f}} 
+{\bfseries user\+\_\+file\+\_\+path}
+\item 
+\mbox{\Hypertarget{classgyp_1_1_m_s_v_s_user_file_1_1_writer_aad911e609051c0d2f1b2a2b0ba7ab75d}\label{classgyp_1_1_m_s_v_s_user_file_1_1_writer_aad911e609051c0d2f1b2a2b0ba7ab75d}} 
+{\bfseries version}
+\item 
+\mbox{\Hypertarget{classgyp_1_1_m_s_v_s_user_file_1_1_writer_a46a6c7058712a29c92356d06e6d83226}\label{classgyp_1_1_m_s_v_s_user_file_1_1_writer_a46a6c7058712a29c92356d06e6d83226}} 
+{\bfseries name}
+\item 
+\mbox{\Hypertarget{classgyp_1_1_m_s_v_s_user_file_1_1_writer_a0e061cdc9af5dd6fd954d70bf2f3ee3b}\label{classgyp_1_1_m_s_v_s_user_file_1_1_writer_a0e061cdc9af5dd6fd954d70bf2f3ee3b}} 
+{\bfseries configurations}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Visual Studio XML user user file writer.\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgyp_1_1_m_s_v_s_user_file_1_1_writer_a311e7148c17c60e6486f17ee24f7aac6}\label{classgyp_1_1_m_s_v_s_user_file_1_1_writer_a311e7148c17c60e6486f17ee24f7aac6}} 
+\index{gyp.MSVSUserFile.Writer@{gyp.MSVSUserFile.Writer}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!gyp.MSVSUserFile.Writer@{gyp.MSVSUserFile.Writer}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def gyp.\+MSVSUser\+File.\+Writer.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{user\+\_\+file\+\_\+path,  }\item[{}]{version,  }\item[{}]{name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Initializes the user file.
+
+Args:
+user_file_path: Path to the user file.
+version: Version info.
+name: Name of the user file.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classgyp_1_1_m_s_v_s_user_file_1_1_writer_a204919c3534b512904954942e9e54d4d}\label{classgyp_1_1_m_s_v_s_user_file_1_1_writer_a204919c3534b512904954942e9e54d4d}} 
+\index{gyp.MSVSUserFile.Writer@{gyp.MSVSUserFile.Writer}!AddConfig@{AddConfig}}
+\index{AddConfig@{AddConfig}!gyp.MSVSUserFile.Writer@{gyp.MSVSUserFile.Writer}}
+\doxysubsubsection{\texorpdfstring{AddConfig()}{AddConfig()}}
+{\footnotesize\ttfamily def gyp.\+MSVSUser\+File.\+Writer.\+Add\+Config (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Adds a configuration to the project.
+
+Args:
+name: Configuration name.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgyp_1_1_m_s_v_s_user_file_1_1_writer_afc922ceaa4962b010701ba65f7daee71}\label{classgyp_1_1_m_s_v_s_user_file_1_1_writer_afc922ceaa4962b010701ba65f7daee71}} 
+\index{gyp.MSVSUserFile.Writer@{gyp.MSVSUserFile.Writer}!AddDebugSettings@{AddDebugSettings}}
+\index{AddDebugSettings@{AddDebugSettings}!gyp.MSVSUserFile.Writer@{gyp.MSVSUserFile.Writer}}
+\doxysubsubsection{\texorpdfstring{AddDebugSettings()}{AddDebugSettings()}}
+{\footnotesize\ttfamily def gyp.\+MSVSUser\+File.\+Writer.\+Add\+Debug\+Settings (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{config\+\_\+name,  }\item[{}]{command,  }\item[{}]{environment = {\ttfamily \{\}},  }\item[{}]{working\+\_\+directory = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Adds a DebugSettings node to the user file for a particular config.
+
+Args:
+command: command line to run.  First element in the list is the
+executable.  All elements of the command will be quoted if
+necessary.
+working_directory: other files which may trigger the rule. (optional)
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgyp_1_1_m_s_v_s_user_file_1_1_writer_a24d2f6548017e8a8ed419605b5424897}\label{classgyp_1_1_m_s_v_s_user_file_1_1_writer_a24d2f6548017e8a8ed419605b5424897}} 
+\index{gyp.MSVSUserFile.Writer@{gyp.MSVSUserFile.Writer}!WriteIfChanged@{WriteIfChanged}}
+\index{WriteIfChanged@{WriteIfChanged}!gyp.MSVSUserFile.Writer@{gyp.MSVSUserFile.Writer}}
+\doxysubsubsection{\texorpdfstring{WriteIfChanged()}{WriteIfChanged()}}
+{\footnotesize\ttfamily def gyp.\+MSVSUser\+File.\+Writer.\+Write\+If\+Changed (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Writes the user file.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/vaishnavi\+\_\+jadhav/\+Desktop/\+Developer/code/mean-\/stack-\/example/client/node\+\_\+modules/node-\/gyp/gyp/pylib/gyp/MSVSUser\+File.\+py\end{DoxyCompactItemize}

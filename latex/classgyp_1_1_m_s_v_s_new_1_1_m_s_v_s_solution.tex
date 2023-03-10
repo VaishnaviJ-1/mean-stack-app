@@ -1,0 +1,71 @@
+\hypertarget{classgyp_1_1_m_s_v_s_new_1_1_m_s_v_s_solution}{}\doxysection{gyp.\+MSVSNew.\+MSVSSolution Class Reference}
+\label{classgyp_1_1_m_s_v_s_new_1_1_m_s_v_s_solution}\index{gyp.MSVSNew.MSVSSolution@{gyp.MSVSNew.MSVSSolution}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classgyp_1_1_m_s_v_s_new_1_1_m_s_v_s_solution_a40331c4612d02069da66c4e5eaf9d31a}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, path, version, entries=None, variants=None, website\+Properties=True)
+\item 
+def \mbox{\hyperlink{classgyp_1_1_m_s_v_s_new_1_1_m_s_v_s_solution_a378e39e47dc791f52f62cef5c119dd7a}{Write}} (self, writer=gyp.\+common.\+Write\+On\+Diff)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgyp_1_1_m_s_v_s_new_1_1_m_s_v_s_solution_a0f45b1593fb186dbc61d1473a7c1ccb0}\label{classgyp_1_1_m_s_v_s_new_1_1_m_s_v_s_solution_a0f45b1593fb186dbc61d1473a7c1ccb0}} 
+{\bfseries path}
+\item 
+\mbox{\Hypertarget{classgyp_1_1_m_s_v_s_new_1_1_m_s_v_s_solution_aa2087a4bba97d418f8d02b4560a62138}\label{classgyp_1_1_m_s_v_s_new_1_1_m_s_v_s_solution_aa2087a4bba97d418f8d02b4560a62138}} 
+{\bfseries website\+Properties}
+\item 
+\mbox{\Hypertarget{classgyp_1_1_m_s_v_s_new_1_1_m_s_v_s_solution_a751fd1c50b21dea8b442e062d1f77435}\label{classgyp_1_1_m_s_v_s_new_1_1_m_s_v_s_solution_a751fd1c50b21dea8b442e062d1f77435}} 
+{\bfseries version}
+\item 
+\mbox{\Hypertarget{classgyp_1_1_m_s_v_s_new_1_1_m_s_v_s_solution_a3683e9c4f24d9808e0e899c38faa2d84}\label{classgyp_1_1_m_s_v_s_new_1_1_m_s_v_s_solution_a3683e9c4f24d9808e0e899c38faa2d84}} 
+{\bfseries entries}
+\item 
+\mbox{\Hypertarget{classgyp_1_1_m_s_v_s_new_1_1_m_s_v_s_solution_a20df0cdc65d52273f92e6e8ed20e5996}\label{classgyp_1_1_m_s_v_s_new_1_1_m_s_v_s_solution_a20df0cdc65d52273f92e6e8ed20e5996}} 
+{\bfseries variants}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Visual Studio solution.\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgyp_1_1_m_s_v_s_new_1_1_m_s_v_s_solution_a40331c4612d02069da66c4e5eaf9d31a}\label{classgyp_1_1_m_s_v_s_new_1_1_m_s_v_s_solution_a40331c4612d02069da66c4e5eaf9d31a}} 
+\index{gyp.MSVSNew.MSVSSolution@{gyp.MSVSNew.MSVSSolution}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!gyp.MSVSNew.MSVSSolution@{gyp.MSVSNew.MSVSSolution}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def gyp.\+MSVSNew.\+MSVSSolution.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{path,  }\item[{}]{version,  }\item[{}]{entries = {\ttfamily None},  }\item[{}]{variants = {\ttfamily None},  }\item[{}]{website\+Properties = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Initializes the solution.
+
+Args:
+path: Path to solution file.
+version: Format version to emit.
+entries: List of entries in solution.  May contain Folder or Project
+  objects.  May be None, if the folder is empty.
+variants: List of build variant strings.  If none, a default list will
+  be used.
+websiteProperties: Flag to decide if the website properties section
+  is generated.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classgyp_1_1_m_s_v_s_new_1_1_m_s_v_s_solution_a378e39e47dc791f52f62cef5c119dd7a}\label{classgyp_1_1_m_s_v_s_new_1_1_m_s_v_s_solution_a378e39e47dc791f52f62cef5c119dd7a}} 
+\index{gyp.MSVSNew.MSVSSolution@{gyp.MSVSNew.MSVSSolution}!Write@{Write}}
+\index{Write@{Write}!gyp.MSVSNew.MSVSSolution@{gyp.MSVSNew.MSVSSolution}}
+\doxysubsubsection{\texorpdfstring{Write()}{Write()}}
+{\footnotesize\ttfamily def gyp.\+MSVSNew.\+MSVSSolution.\+Write (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{writer = {\ttfamily gyp.common.WriteOnDiff} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Writes the solution file to disk.
+
+Raises:
+IndexError: An entry appears multiple times.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/vaishnavi\+\_\+jadhav/\+Desktop/\+Developer/code/mean-\/stack-\/example/client/node\+\_\+modules/node-\/gyp/gyp/pylib/gyp/MSVSNew.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,70 @@
+\hypertarget{classgyp_1_1generator_1_1analyzer_1_1_target}{}\doxysection{gyp.\+generator.\+analyzer.\+Target Class Reference}
+\label{classgyp_1_1generator_1_1analyzer_1_1_target}\index{gyp.generator.analyzer.Target@{gyp.generator.analyzer.Target}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgyp_1_1generator_1_1analyzer_1_1_target_a10b0cf003b060883df034c6f05f60652}\label{classgyp_1_1generator_1_1analyzer_1_1_target_a10b0cf003b060883df034c6f05f60652}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, name)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgyp_1_1generator_1_1analyzer_1_1_target_a4b0e5a126a5fbb62f363ab35cc410fa1}\label{classgyp_1_1generator_1_1analyzer_1_1_target_a4b0e5a126a5fbb62f363ab35cc410fa1}} 
+{\bfseries deps}
+\item 
+\mbox{\Hypertarget{classgyp_1_1generator_1_1analyzer_1_1_target_a2c3ca555a942fe777e1061e21c5cf962}\label{classgyp_1_1generator_1_1analyzer_1_1_target_a2c3ca555a942fe777e1061e21c5cf962}} 
+{\bfseries match\+\_\+status}
+\item 
+\mbox{\Hypertarget{classgyp_1_1generator_1_1analyzer_1_1_target_aee75ba9ef97eb5bd90f3883bd0bde041}\label{classgyp_1_1generator_1_1analyzer_1_1_target_aee75ba9ef97eb5bd90f3883bd0bde041}} 
+{\bfseries back\+\_\+deps}
+\item 
+\mbox{\Hypertarget{classgyp_1_1generator_1_1analyzer_1_1_target_ad28fece66b22fe7a652ba9880a0a5c7a}\label{classgyp_1_1generator_1_1analyzer_1_1_target_ad28fece66b22fe7a652ba9880a0a5c7a}} 
+{\bfseries name}
+\item 
+\mbox{\Hypertarget{classgyp_1_1generator_1_1analyzer_1_1_target_a01e3eda32dc6b74ff49086942fe42ae2}\label{classgyp_1_1generator_1_1analyzer_1_1_target_a01e3eda32dc6b74ff49086942fe42ae2}} 
+{\bfseries visited}
+\item 
+\mbox{\Hypertarget{classgyp_1_1generator_1_1analyzer_1_1_target_a6e0f2a19e76fba491ec04491cc3c6036}\label{classgyp_1_1generator_1_1analyzer_1_1_target_a6e0f2a19e76fba491ec04491cc3c6036}} 
+{\bfseries requires\+\_\+build}
+\item 
+\mbox{\Hypertarget{classgyp_1_1generator_1_1analyzer_1_1_target_a7ac25cb042c19dc461d0d9f6defb5e28}\label{classgyp_1_1generator_1_1analyzer_1_1_target_a7ac25cb042c19dc461d0d9f6defb5e28}} 
+{\bfseries added\+\_\+to\+\_\+compile\+\_\+targets}
+\item 
+\mbox{\Hypertarget{classgyp_1_1generator_1_1analyzer_1_1_target_af7b6e00c3d150719163bdc702a20fe7a}\label{classgyp_1_1generator_1_1analyzer_1_1_target_af7b6e00c3d150719163bdc702a20fe7a}} 
+{\bfseries in\+\_\+roots}
+\item 
+\mbox{\Hypertarget{classgyp_1_1generator_1_1analyzer_1_1_target_a721804735088a9a287bda28745b31d02}\label{classgyp_1_1generator_1_1analyzer_1_1_target_a721804735088a9a287bda28745b31d02}} 
+{\bfseries is\+\_\+executable}
+\item 
+\mbox{\Hypertarget{classgyp_1_1generator_1_1analyzer_1_1_target_add56c544318c4d28146b069a3d6e0bdf}\label{classgyp_1_1generator_1_1analyzer_1_1_target_add56c544318c4d28146b069a3d6e0bdf}} 
+{\bfseries is\+\_\+static\+\_\+library}
+\item 
+\mbox{\Hypertarget{classgyp_1_1generator_1_1analyzer_1_1_target_aee8c95526b6b23f14ea9db2186cb495e}\label{classgyp_1_1generator_1_1analyzer_1_1_target_aee8c95526b6b23f14ea9db2186cb495e}} 
+{\bfseries is\+\_\+or\+\_\+has\+\_\+linked\+\_\+ancestor}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Holds information about a particular target:
+deps: set of Targets this Target depends upon. This is not recursive, only the
+direct dependent Targets.
+match_status: one of the MatchStatus values.
+back_deps: set of Targets that have a dependency on this Target.
+visited: used during iteration to indicate whether we've visited this target.
+This is used for two iterations, once in building the set of Targets and
+again in _GetBuildTargets().
+name: fully qualified name of the target.
+requires_build: True if the target type is such that it needs to be built.
+See _DoesTargetTypeRequireBuild for details.
+added_to_compile_targets: used when determining if the target was added to the
+set of targets that needs to be built.
+in_roots: true if this target is a descendant of one of the root nodes.
+is_executable: true if the type of target is executable.
+is_static_library: true if the type of target is static_library.
+is_or_has_linked_ancestor: true if the target does a link (eg executable), or
+if there is a target in back_deps that does a link.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/vaishnavi\+\_\+jadhav/\+Desktop/\+Developer/code/mean-\/stack-\/example/client/node\+\_\+modules/node-\/gyp/gyp/pylib/gyp/generator/analyzer.\+py\end{DoxyCompactItemize}
